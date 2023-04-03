@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.nav1{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background: #222f3e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav1 i{
+    margin:0 5px;
+}
+
+.nav1 a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background: #e67e22;
+
+}
+
+.nav2{
+    width: 100%;
+    height: 80px;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    position: relative;
+
+}
+
+.menu a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #e67e22;
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+
+.img{
+    padding-top: 5px;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7) 50%,#e67e22),url('Bus.jpeg');
+    background-size: 100% 100%;
+}
+
+.h-text{
+    max-width: 600px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.h-text h1{
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.h-text h2{
+    font-size: 30px;
+    margin:40px 0;
+    line-height: :30px;
+}
+
+.h-text a{
+    text-decoration: none;
+    color: white;
+    background: #e67e22;
+    padding: 10px 20px;
+    margin: 0 15px;
+    
+}
+
+#SearchBusses-btn{
+    background: linear-gradient(to bottom, #6679b7, #6679b7);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #f6f6f6;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 12px 80px;
+    transition: all 0.3s ease-in;
+}
+
+option {
+    background-color: black;
+    color: #f6f6f6;
+}
+
+input,
+select {
+  background: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ffffff;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+label {
+    color: #ffffff;
+    font-size: 1.0rem;
+    margin-bottom: 5px;
+}
+#SearchBusses-btn:hover {
+    background: linear-gradient(to bottom, #424040, #424040);
+}
+
+
+
+
